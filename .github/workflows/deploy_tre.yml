@@ -9,13 +9,13 @@ on:  # yamllint disable-line rule:truthy
     - cron: "0 0 * * *"
   push:
     branches: [main]
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: The environment to run this workflow in
-        type: environment
-        default: CICD
-        required: true
+  #workflow_dispatch:
+  #  inputs:
+      # environment:
+      #   description: The environment to run this workflow in
+      #   type: environment
+      #   default: CICD
+      #   required: true
 
 # This will prevent multiple runs of this entire workflow.
 # We should NOT cancel in progress runs as that can destabilize the environment.
