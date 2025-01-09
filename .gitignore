@@ -13,6 +13,7 @@ private.env
 
 # Config
 config.yaml
+config.sample.yaml
 
 # CNAB
 .cnab/
